@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+body{
+    height: 100vh;
+    background: #282828;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+input, button{
+    outline: none;
+    border: 0;
+}
+
+form #text{
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    height: 35px;
+    font-size: 18px;
+}
+
+form button{
+    margin: 20px auto;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+}
+
+form button:hover{
+    background: none;
+    color: red;
+}
+
+#answer{
+    margin: 20px auto;
+    padding: 10px;
+    height: fit-content;
+    font-size: 18px;
+    background: white;
+    border-radius: 10px;
+    resize: none;
+}
+
+body div{
+    position: fixed;
+    width: -webkit-fill-available;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    color: white;
+    font-family: cursive;
+}
+
+body div span:first-child{
+    float: left;
+}
+
+body div span:last-child{
+    float: right;
+    cursor: pointer;
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/info.css')}}">
+    <title>Text to Morse</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Alphabets</th>
+            <td>Morse convention</td>
+        </tr>
+        
+        <tr>
+            <th>a</th> 
+            <td>._</td>
+        </tr>
+    
+        <tr>
+            <th>b</th>
+            <td>_...</td>
+        </tr>
+
+        <tr>
+            <th>c</th>
+            <td>_._.</td>
+        </tr>
+
+        <tr>
+            <th>d</th>
+            <td>_..</td>
+        </tr>
+
+        <tr>
+            <th>e</th>
+            <td>.</td>
+        </tr>
+
+        <tr>
+            <th>f</th>
+            <td>.._.</td>
+        </tr>
+
+        <tr>
+            <th>g</th>
+            <td>__.</td>
+        </tr>
+
+        <tr>
+            <th>h</th>
+            <td>....</td>
+        </tr>
+
+        <tr>
+            <th>i</th>
+            <td>..</td>
+        </tr>
+
+        <tr>
+            <th>j</th>
+            <td>.___</td>
+        </tr>
+
+        <tr>
+            <th>k</th>
+            <td>_._</td>
+        </tr>
+
+        <tr>
+            <th>l</th>
+            <td>._..</td>
+        </tr>
+
+        <tr>
+            <th>m</th>
+            <td>__</td>
+        </tr>
+
+        <tr>
+            <th>n</th>
+            <td>_.</td>
+        </tr>
+
+        <tr>
+            <th>o</th>
+            <td>___</td>
+        </tr>
+
+        <tr>
+            <th>p</th>
+            <td>.__.</td>
+        </tr>
+
+        <tr>
+            <th>q</th>
+            <td>__._</td>
+        </tr>
+
+        <tr>
+            <th>r</th>
+            <td>._.</td>
+        </tr>
+
+        <tr>
+            <th>s</th>
+            <td>...</td>
+        </tr>
+
+        <tr>
+            <th>t</th>
+            <td>_</td>
+        </tr>
+
+        <tr>
+            <th>u</th>
+            <td>.._</td>
+        </tr>
+
+        <tr>
+            <th>v</th>
+            <td>..._</td>
+        </tr>
+
+        <tr>
+            <th>w</th>
+            <td>.__</td>
+        </tr>
+
+        <tr>
+            <th>x</th>
+            <td>_.._</td>
+        </tr>
+
+        <tr>
+            <th>y</th>
+            <td>_.__</td>
+        </tr>
+
+        <tr>
+            <th>z</th>
+            <td>__..</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Numbers</th>
+            <td>Morse convention</td>
+        </tr>
+        
+        <tr>
+            <th>0</th>
+            <td>_____</td>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <td>.____</td>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <td>..___</td>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <td>...__</td>
+        </tr>
+
+        <tr>
+            <th>4</th>
+            <td>...._</td>
+        </tr>
+
+        <tr>
+            <th>5</th>
+            <td>.....</td>
+        </tr>
+
+        <tr>
+            <th>6</th>
+            <td>_....</td>
+        </tr>
+
+        <tr>
+            <th>7</th>
+            <td>__...</td>
+        </tr>
+
+        <tr>
+            <th>8</th>
+            <td>___..</td>
+        </tr>
+
+        <tr>
+            <th>9</th>
+            <td>____.</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Symbols</th>
+            <td>Morse convention</td>
+        </tr>
+
+        <tr>
+            <th>=</th>
+            <td>_..._</td>
+        </tr>
+
+        <tr>
+            <th>,</th>
+            <td>__..__</td>
+        </tr>
+
+        <tr>
+            <th>.</th>
+            <td>._._._</td>
+        </tr>
+
+        <tr>
+            <th>!</th>
+            <td>_._.__</td>
+        </tr>
+
+        <tr>
+            <th>/</th>
+            <td>_.._.</td>
+        </tr>
+
+        <tr>
+            <th>@</th>
+            <td>.__._.</td>
+        </tr>
+
+        <tr>
+            <th>"</th>
+            <td>._.._.</td>
+        </tr>
+
+        <tr>
+            <th>(</th>
+            <td>_.__.</td>
+        </tr>
+
+        <tr>
+            <th>)</th>
+            <td>_.__._</td>
+        </tr>
+
+        <tr>
+            <th>&</th>
+            <td>._...</td>
+        </tr>
+
+        <tr>
+            <th>?</th>
+            <td>..__..</td>
+        </tr>
+
+        <tr>
+            <th>:</th>
+            <td>___...</td>
+        </tr>
+
+        <tr>
+            <th>+</th>
+            <td>._._.</td>
+        </tr>
+
+        <tr>
+            <th>_</th>
+            <td>..__._</td>
+        </tr>
+
+        <tr>
+            <th>;</th>
+            <td>_._._.</td>
+        </tr>
+
+        <tr>
+            <th>></th>
+            <td>_.__._</td>
+        </tr>
+
+        <tr>
+            <th>{</th>
+            <td>_.__.</td>
+        </tr>
+
+        <tr>
+            <th>-</th>
+            <td>_...._</td>
+        </tr>
+
+        <tr>
+            <th>[</th>
+            <td>_.__.</td>
+        </tr>
+
+        <tr>
+            <th>$</th>
+            <td>..._.._</td>
+        </tr>
+
+        <tr>
+            <th>'</th>
+            <td>.____.</td>
+        </tr>
+
+        <tr>
+            <th>]</th>
+            <td>_.__._</td>
+        </tr>
+
+        <tr>
+            <th><</th>
+            <td>_.__.</td>
+        </tr>
+
+        <tr>
+            <th>}</th>
+            <td>_.__._</td>
+        </tr>
+
+        <tr>
+            <th>^</th>
+            <td>^</td>
+        </tr>
+
+        <tr>
+            <th>%</th>
+            <td>%</td>
+        </tr>
+
+        <tr>
+            <th>~</th>
+            <td>~</td>
+        </tr>
+
+        <tr>
+            <th>`</th>
+            <td>`</td>
+        </tr>
+
+        <tr>
+            <th>*</th>
+            <td>*</td>
+        </tr>
+
+        <tr>
+            <th>|</th>
+            <td> | </td>
+        </tr>
+    </table>
+    <div>
+        <span><a href="{{url_for('home')}}">Back to Home</a></span>
+    </div>
+</body>
+</html>

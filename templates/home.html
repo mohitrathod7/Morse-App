@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+    <title>Text to Morse</title>
+</head>
+<body>
+    <form method="GET" action="/convert">
+        <input type="text" name="text" id="text" placeholder="Type to convert" value="{{_text}}" autocomplete="off">
+        <button type="submit">Convert to Morse Code</button>
+        <textarea type="text" id="answer" rows="15" cols="100" disabled>{{_answer}}</textarea>
+    </form>
+    
+    <div>
+        <span>Note : | denotes space between two letters</span>
+        <span><a href="{{url_for('info')}}"><i class="fa fa-info-circle" style="margin-right: 5px;"></i>Info</a></span>
+    </div>
+</body>
+</html>
